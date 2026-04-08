@@ -1,9 +1,15 @@
+<!DOCTYPE html>
+
 <html>
     <head>
         <!-- Inter Google Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -14,13 +20,17 @@
             </div>
         </header>
 
-        <div>
-            <input type="text" placehold="Search for a movie">
-            <button>Search</button>
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for a movie" aria-label="Search for a movie.">
+            <button class="search-btn">Search</button>
         </div>
 
         <main>
-            Main
+            <div class="explore-container">
+                <i class="fa-solid fa-film"></i>
+                <p class="explore-text">Start exploring</p>
+            </div>
         </main>
 
         <script src="index.js"></script>

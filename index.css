@@ -13,9 +13,9 @@ h1 {
     font-weight: 800;
 }
 
-/* Colors */
-header {
-    color: #FFFFFF;
+.explore-text {
+    font-size: 1.125rem;
+    margin: 0;
 }
 
 /* Buttons */
@@ -23,8 +23,47 @@ header {
     background: none;
     border: none;
     color: inherit;
-    font-size: 0.875rem;
     font-weight: 700;
+}
+
+.watchlist-btn,
+.search-btn  {
+    font-size: 0.875rem;
+}
+
+.search-btn {
+    width: 10%;
+    border: none;
+    border-end-end-radius: 5px;
+    border-start-end-radius: 5px;
+    background: #F9FAFB;
+    color: #374151;
+    font-weight: 50;
+}
+
+/* Inputs */
+input[type=text] {
+    width: calc(100% - 10%);
+    /* padding-left: 2em; */
+    padding: 0;
+    border: none;
+    border-right: 1px solid #D1D5DB;
+    font-size: 0.875rem;
+}
+
+/* Icons */
+.fa-magnifying-glass {
+    color: #9CA3AF;
+    padding: 0 0.5em;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-start-start-radius: 5px;
+    border-end-start-radius: 5px;
+}
+
+.fa-film {
+    font-size: 5em;
 }
 
 /* Layout */
@@ -33,6 +72,7 @@ header {
     background-image: url('/img/header.png');
     background-size: cover;
     background-position-y: 21%;
+    color: #FFFFFF;
     display: flex;
     justify-content: center;
     position: relative;
@@ -45,6 +85,34 @@ header {
     width: 90%;
     position: relative;
     z-index: 2;
+}
+
+.search-container {
+    width: 90%;
+    height: 38px;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    position: absolute;
+    top: 190px;
+    left: 5%;
+    z-index: 1;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 208px);
+}
+
+.explore-container {
+    color: #DFDDDD;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: -40%;
 }
 
 /* Visual Effects */

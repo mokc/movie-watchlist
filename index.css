@@ -2,3 +2,57 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+/* Typography */
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+h1 {
+    font-size: 2.674rem;
+    font-weight: 800;
+}
+
+/* Colors */
+header {
+    color: #FFFFFF;
+}
+
+/* Buttons */
+.watchlist-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+/* Layout */
+header {
+    height: 208px;
+    background-image: url('/img/header.png');
+    background-size: cover;
+    background-position-y: 21%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+/* Visual Effects */
+header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}

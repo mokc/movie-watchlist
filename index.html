@@ -16,23 +16,25 @@
         <header>
             <div class="header-container">
                 <h1>Find your film</h1>
-                <button class="watchlist-btn">My Watchlist</button>
+                <a href="watchlist.html">My Watchlist</a>
             </div>
         </header>
 
-        <div class="search-container">
+        <form class="search-form" id="search-form">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search for a movie" aria-label="Search for a movie.">
-            <button class="search-btn">Search</button>
-        </div>
+            <input type="text" id="search-input" placeholder="Search for a movie" aria-label="Search for a movie.">
+            <button class="search-btn" type="submit">Search</button>
+        </form>
 
         <main>
-            <div class="explore-container">
+            <div class="background-container" id="background-container">
                 <i class="fa-solid fa-film"></i>
-                <p class="explore-text">Start exploring</p>
+                <p class="background-text">Start exploring</p>
             </div>
+
+            <div class="results" id="results"></div>
         </main>
 
-        <script src="index.js"></script>
+        <script src="index.js" type="module"></script>
     </body>
 </html>
